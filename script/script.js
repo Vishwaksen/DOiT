@@ -6,17 +6,12 @@ $(document).ready(function(){
 	myForm.trigger("reset");
 });
 
-
-/*// View Resume
-var view_resume = document.getElementById("view_resume");
-view_resume.onclick = function(){
-	window.open('https://drive.google.com/open?i','_blank');
-}*/
-
 // Handles the E-mail Functionality
 $(document).ready(function(){
 	$('#poster_form').hide();
 	$('#poster_dropdown').hide();
+	$('#doer_form').show();
+	$('#doer_dropdown').show();
 	$('#preferred_work').change(function(){
 		var preferred_work = $("#preferred_work").val();
 		if(preferred_work == 'doer'){
@@ -62,7 +57,7 @@ $(document).ready(function(){
 		}
 
 		var email_content = `
-			<table style="border:2px solid #e8491d; text-align:left;padding: 15px,15px,15px,15px;background-color:#3b5998; color:#ffffff;">
+			<table style="border:2px solid #e8491d; text-align:left;padding: 15px,15px,15px,15px;background-color:#1E1E1E; color:#ffffff;">
 				<tr>
 					<td width="110">First Name</td>
 					<td width="175">${first_name}</td>
