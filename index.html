@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="DOiT Website">
+		<meta name="keywords" content="DOiT - Errand/Tasks Runner ">
+		<meta name="author" content="Vishwaksen Mane">
+		<meta name="googlebot" content="index,follow">
+		<meta name="ROBOTS" content="index,follow">
+		<title> DOiT | Welcome</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="script/jquery-3.1.1.min.js"> </script>
+		<script type="text/javascript" src="script/script.js"> </script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init("user_bnIpsF6nKLnSVQEbWFaMS");
+		   })();
+		</script>
+	</head>
+
+	<body>
+	 <header background-image="images/task_shopping.jpg">
+	 	<div class="container">
+	 		<div id="branding">
+	 			<h1><span class="highlight">DOiT - </span> Task Runner </h1>
+	 		</div>
+	 		<nav>
+	 			<ul>
+	 				<li class="current"> <a href="#">Home</a> </li>
+		 			<li> <a href="#">Doer</a> </li>
+	 				<li> <a href="#">Poster</a> </li>
+		 		</ul>
+			 </nav>
+		</div>
+	 </header>
+
+	 <table id="main_table">
+		 <tr>
+			 <td id="myform_table">
+				<label><b>You're a  &nbsp;&nbsp;</b></label>
+				<select name="preferred_work" id="preferred_work">
+					<option value="doer">Doer</option>
+					<option value="poster">Poster</option>
+				</select>
+				<h2 id="doer_dropdown"><b>Doer Registration Form</b></h2>
+				<h2 id="poster_dropdown"><b>Poster Registration Form</b></h2>
+ 				<form class="registration_form" id="doer_form" name="doer" autocomplete="on">
+ 					<label><b>First Name</b>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your First Name" id="first_name"><br/>
+ 					<label><b>Last Name</b>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					 <input type="text" placeholder="Enter your Last Name" id="last_name"><br/>
+ 					<label><b>Email ID</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="email" placeholder="Enter your Email Address" id="email_id"><br/>
+ 					<label><b>Phone</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your Phone Number" id="phone_number"><br/>
+ 					<label><b>Date of Birth</b>&nbsp;</label>
+ 					<input type="text" placeholder="Enter your Date of Birth" id="dob"><br/>
+ 					<label><b>Skills</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your Skills" id="skills"><br/>
+					<label><b>Availability</b>&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your Availability" id="availability"><br/>
+					<label><b>Type of Work</b></label>
+ 					<select name="preferred_work" id="type_of_preferred_work">
+						<option value="Interior">Interior or Indoor</option>
+						<option value="Exterior">Exterior or Outdoor</option>
+						<option value="Both">Both</option>
+					</select><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 				<button class="submit_form_button" type="submit">Submit </button>
+ 				</form>
+				<br/>
+				<form class="registration_form" id="poster_form" name="poster" autocomplete="on">
+ 					<label><b>First Name</b>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your First Name" id="poster_first_name"><br/>
+ 					<label><b>Last Name</b>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					 <input type="text" placeholder="Enter your Last Name" id="poster_last_name"><br/>
+ 					<label><b>Email ID</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="email" placeholder="Enter your Email Address" id="poster_email_id"><br/>
+ 					<label><b>Phone</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+ 					<input type="text" placeholder="Enter your Phone Number" id="poster_phone_number"><br/>
+					<label><b>Specify Task&nbsp;</b></label>
+		 			<input type="text" placeholder="Enter your Job Description" id="job_description"></input><br/>
+ 					<label><b>Price Desired</b>	</label>
+ 					<input type="text" placeholder="Enter your Desired Price" id="price"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	 				<button class="submit_form_button" type="submit">Submit </button>
+ 				</form>
+
+ 			</td>
+		 </tr>
+	 </table>
+
+	 <!--<section id="showcase">
+		<div class="container">
+			<h1> Welcome Folks !! </h1>
+			<p> Passionate Software Developer who loves to juggle things and develop scalable applications.</p>
+			<p>I’m technically proficient, easy to work with and I’m always open to expand my skills and knowledge through new opportunities.</p>
+		</div>
+     </section>
+
+	 <section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="images/education.png" alt="education">
+				<h1>Education</h1>
+				<img src="images/buffalo.png" alt="Logo - University at  Buffalo, The State University of New York"><h3><br>Master's in Computer Science and Engineering</h3>
+				<br> <br> <br> <br>
+				<img src="images/pune.png" alt="Logo - University of Pune"><h3>Bachelor's in Computer Engineering</h3>
+			</div>
+			<div class="box">
+				<img src="images/work_experience.jpg" alt="professional experience">
+				<h1>Professional Experience</h1>
+				<ul>
+					<li>
+						<img src="images/synacor_logo.jpg" alt="Synacor Logo">
+						Software Engineer at Synacor
+					</li>
+					<li>
+						<img src="images/lntinfotech_logo.jpg" alt="Larsen and Toubro Infotech Logo">
+						Software Engineer at Larsen and Toubro Infotech
+					</li>
+				</ul>
+			</div>
+			<div name="myform">
+				<form class="registration_form" name="doer" >
+					<label>First Name</label>
+					<input type="text" placeholder="Enter your Name" id="first_name"><br/>
+					<label>Last Name</label>
+					<input type="text" placeholder="Enter your Last Name" id="last_name"><br/>
+					<label>Email</label>
+					<input type="email" placeholder="Enter your Email Address" id="email_id"><br/>
+					<label>Phone</label>
+					<input type="text" placeholder="Enter your Phone Number" id="phone_number"><br/>
+					<label>Date of Birth</label>
+					<input type="text" placeholder="Enter your Date of Birth" id="dob"><br/>
+					<label>Phone</label>
+					<input type="text" placeholder="Enter your Phone Number" id="phone_number"><br/>
+					<label>Skills</label><br>
+					<textarea placeholder="Enter your Skills" id="skills"></textarea>
+				<button class="send_mail_button" type="submit">Send E-Mail </button>
+				</form>
+		</div>
+		</div>
+	 </section>
+
+	 <div class="footer">
+	 	<section id="footer_send_message">
+	 	<div class="footerText">
+	 		<h3> Just shoot me an E-Mail and we can get the ball rolling. What are you waiting for? </h3>
+			<div class = "contactDetails">
+				<ul>
+					<-p-<li><strong><span id="contact">Contact</span></strong></li> -
+		 			<li>Email : vishwaksen.mane@gmail.com</li><br>
+	 				<li>Cell  : +1 716-424-8779</li>
+	 			</ul>
+	 		</div> <br><br><br><br><br>
+	 		<div class = "copyright">
+	 			<p>&copy; 2017 Vishwaksen Mane | Design and Development. All Rights Reserved.</p>
+		 	</div>
+		 </div>
+		 <div class="mail_image">
+		 	<img src="images/mail.JPG" alt="Send E-mail Image">
+		 </div>
+		 <aside id="sidebar">
+		 	<div id="message">
+		 		<-<h3>Contact Me</h3>-><br>
+		 		<form class="contact_form">
+		 			<div>
+		 				<label>Name</label><br>
+		 				<input type="text" placeholder="Enter your Name" id="email_name">
+		 			</div>
+		 			<div>
+		 				<label>Email</label><br>
+		 				<input type="email" placeholder="Enter your Email Address" id="email_id">
+		 			</div>
+		 			<div>
+		 				<label>Message</label><br>
+		 				<textarea placeholder="Enter your Message" id="email_content"></textarea>
+		 			</div>
+		 			<button class="send_mail_button" type="submit">Send E-Mail </button>
+		 		</form>
+		 	</div>
+		 </aside>
+		 </section>
+	 </div> -->
+
+
+	</body>
+</html>
